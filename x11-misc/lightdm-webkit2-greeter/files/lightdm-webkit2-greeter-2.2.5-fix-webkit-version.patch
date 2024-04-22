@@ -1,0 +1,17 @@
+Fix webkit-gtk version so that the package compiles on gentoo
+Gentoo version of webkit2gtk was higher than what pkg-config looks for
+From: Nick Brady <nbgenius1@gmail.com>
+
+--- a/meson.build
++++ b/meson.build
+@@ -22,8 +22,8 @@ lightdm_gobject = dependency('liblightdm-gobject-1')
+ x11             = dependency('x11')
+ 
+ gtk3            = dependency('gtk+-3.0',                     version: '>=3.18')
+-webkit2         = dependency('webkit2gtk-4.0',               version: '>=2.12')
+-webkit2_webext  = dependency('webkit2gtk-web-extension-4.0', version: '>=2.12')
++webkit2         = dependency('webkit2gtk-4.1',               version: '>=2.12')
++webkit2_webext  = dependency('webkit2gtk-web-extension-4.1', version: '>=2.12')
+ 
+ greeter_deps = [dbus_glib, gtk3, webkit2, x11]
+ webext_deps = [webkit2_webext, lightdm_gobject]

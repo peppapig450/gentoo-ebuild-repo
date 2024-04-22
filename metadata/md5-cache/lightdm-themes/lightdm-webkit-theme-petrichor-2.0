@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DEPEND=x11-misc/lightdm x11-misc/lightdm-webkit2-greeter sys-apps/accountsservice
+DESCRIPTION=Simple and tidy theme for LightDM's webkit2 greeter
+EAPI=8
+HOMEPAGE=https://yeah.nah.nz/programming/petrichor/
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=x11-misc/lightdm x11-misc/lightdm-webkit2-greeter sys-apps/accountsservice
+SLOT=0
+SRC_URI=https://github.com/phillid/petrichor/archive/refs/tags/2.0.tar.gz -> lightdm-webkit-theme-petrichor-2.0.tar.gz
+_md5_=d0ed993ee2b37d2e0ed5f9a963c07042

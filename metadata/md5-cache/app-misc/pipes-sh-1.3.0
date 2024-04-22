@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=sys-libs/ncurses-6.4_p20230401
+DESCRIPTION=Animated pipes terminal screensaver
+EAPI=8
+HOMEPAGE=https://pipeseroni.github.io
+KEYWORDS=amd64 ~x86
+LICENSE=MIT
+RDEPEND=>=sys-libs/ncurses-6.4_p20230401
+SLOT=0
+SRC_URI=https://github.com/pipeseroni/pipes.sh/archive/v1.3.0.tar.gz
+_md5_=eab8ca4d4d525760ecd6e81d53e62844

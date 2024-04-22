@@ -1,0 +1,15 @@
+Fix src/meson.build to get proper path of utils.sh
+src/meson.build was getting the wrong path
+From: Nick Brady <nbgenius1@gmail.com>
+
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -9,7 +9,7 @@ extdir = with_webext_dir[0]
+ 
+ gresources_dir = include_directories('gresource')
+ gnome = import('gnome')
+-utils = '@0@/utils.sh'.format(meson.build_root())
++utils = '@0@/build/utils.sh'.format(meson.source_root())
+ 
+ # Can't do it the right way until GLib 2.52 is released
+ # js_sources = run_command(utils, 'get-js-files').stdout().split()

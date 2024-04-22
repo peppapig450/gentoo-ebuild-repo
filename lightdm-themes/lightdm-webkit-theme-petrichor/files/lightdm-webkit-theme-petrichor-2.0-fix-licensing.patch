@@ -1,0 +1,18 @@
+Fix Makefile so it doesn't install LICENSE file to /usr/share/licenses
+Gentoo handles licenses differently than Arch Linux
+From: Nick Brady <nbgenius1@gmail.com>
+
+--- a/Makefile
++++ b/Makefile
+@@ -17,10 +17,10 @@ install: all
+ 		install -Dm 644 "$$f" -t "$(DESTDIR)/$(PREFIX)/share/lightdm-webkit/themes/petrichor/" ; \
+ 	done
+ 	cp -r image "$(DESTDIR)/$(PREFIX)/share/lightdm-webkit/themes/petrichor/"
+-	install -Dm 644 LICENSE "$(DESTDIR)/$(PREFIX)/share/licenses/petrichor/LICENSE"
+ 
+ clean:
+ 	rm index.theme
++	rm LICENSE
+ 
+ index.theme: index.theme.in
+ 	sed -e 's/{VERSION}/$(VERSION)/g' $^ > $@

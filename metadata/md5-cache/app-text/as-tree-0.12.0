@@ -1,0 +1,13 @@
+BDEPEND=>=virtual/rust-1.69.0 >=virtual/rust-1.53
+DEFINED_PHASES=compile configure install test unpack
+DESCRIPTION=Print a list of paths as a tree of paths
+EAPI=8
+HOMEPAGE=https://github.com/jez/as-tree
+INHERIT=cargo
+IUSE=debug
+KEYWORDS=~amd64
+LICENSE=Apache-2.0 MIT
+SLOT=0
+SRC_URI=https://crates.io/api/v1/crates/ansi_term/0.12.1/download -> ansi_term-0.12.1.crate https://crates.io/api/v1/crates/atty/0.2.14/download -> atty-0.2.14.crate https://crates.io/api/v1/crates/hermit-abi/0.1.12/download -> hermit-abi-0.1.12.crate https://crates.io/api/v1/crates/libc/0.2.70/download -> libc-0.2.70.crate https://crates.io/api/v1/crates/lscolors/0.7.0/download -> lscolors-0.7.0.crate https://crates.io/api/v1/crates/winapi/0.3.8/download -> winapi-0.3.8.crate https://crates.io/api/v1/crates/winapi-i686-pc-windows-gnu/0.4.0/download -> winapi-i686-pc-windows-gnu-0.4.0.crate https://crates.io/api/v1/crates/winapi-x86_64-pc-windows-gnu/0.4.0/download -> winapi-x86_64-pc-windows-gnu-0.4.0.crate https://github.com/jez/as-tree/archive/refs/tags/0.12.0.tar.gz -> as-tree-0.12.0.tar.gz
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	cargo	cddd4ee89517b7a52ddce3da8abf3109
+_md5_=f8b4d85767bd155ccc2c24753caeecfa
