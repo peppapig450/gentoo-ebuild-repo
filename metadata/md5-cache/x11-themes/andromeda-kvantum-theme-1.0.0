@@ -1,12 +1,12 @@
 DEFINED_PHASES=install postinst postrm preinst
-DESCRIPTION=Sweet (dark) kvantum theme
+DESCRIPTION=Andromeda kvantum theme
 EAPI=8
-HOMEPAGE=https://github.com/EliverLara/Sweet-KDE
+HOMEPAGE=https://github.com/EliverLara/Andromeda-KDE
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=xdg
 KEYWORDS=~amd64
 LICENSE=GPL-3
 SLOT=0
-SRC_URI=https://github.com/peppapig450/themes/raw/main/sweet-dark-kvantum-theme.tar.xz
+SRC_URI=https://github.com/peppapig450/themes/raw/main/andromeda-kvantum-theme.tar.xz
 _eclasses_=xdg-utils	baea6080dd821f5562d715887954c9d3	xdg	4a14c5c24f121e7da66e5aab4a168c6e
-_md5_=1d7c42038c2084c68ba51a7d698ad65b
+_md5_=939a54fd4daf97f9a7b8adb6eba2b849
